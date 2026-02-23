@@ -18,7 +18,7 @@ function UserList() {
         Fehler: {error}
         <button onClick={refreshUsers}>Erneut versuchen</button>
       </div>
-    );
+    )
   }
 
   // 3. Erfolgszustand anzeigen

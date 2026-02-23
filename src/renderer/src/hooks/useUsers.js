@@ -4,9 +4,9 @@ import { userApi } from '../api/userAPI.js'
 
 export function useUsers() {
   // Hier halten wir den Zustand für unsere View bereit
-  const [users, setUsers] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [users, setUsers] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState(null)
 
   // Diese Funktion lädt die Daten über das Model
   const loadUsers = async () => {
@@ -23,12 +23,12 @@ export function useUsers() {
     }
   }
 
-  // Wenn die Komponente geladen wird, holen wir sofort die Daten
+  // Wenn die Komponente geladen wird, werden die Daten geholt
   useEffect(() => {
     loadUsers()
   }, [])
 
-  // Das ViewModel gibt nur die aufbereiteten Daten und Aktionen an die View zurück
+  // Das ViewModel gibt die aufbereiteten Daten und Aktionen an die View zurück
   return {
     users,
     isLoading,
