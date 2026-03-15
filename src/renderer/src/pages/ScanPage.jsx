@@ -71,11 +71,11 @@ export default function ScanPage() {
           <button
             key={cat.name}
             onClick={() => setActiveCategory(cat.name)}
-            className={`h-28 rounded-xl flex items-center justify-center text-xl font-bold border-4 transition
+            className={`h-28 rounded-xl flex flex-col items-center justify-center text-xl font-bold border-4 transition
               ${
                 activeCategory === cat.name
-                  ? 'bg-[#7C83FD] text-white border-[#6C72E8]'
-                  : 'bg-[#D9DADD] text-[#4A4A68] border-[#C9CAD1] hover:bg-[#cfd0d4]'
+                  ? 'bg-[#7C83FD] text-white border-[#6C72E8]' //true
+                  : 'bg-[#D9DADD] text-[#4A4A68] border-[#C9CAD1] hover:bg-[#cfd0d4]' //false
               }
             `}
           >
